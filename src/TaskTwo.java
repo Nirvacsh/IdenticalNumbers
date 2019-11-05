@@ -22,7 +22,6 @@ public class TaskTwo {
             System.out.print(secondArray[j]+ " ");
         }
 
-        System.out.print("\nIdentical numbers: ");
         for (int temp : firstArray) {
             for (int k : secondArray) {
                 if (k == temp && !result.contains(temp)) {
@@ -30,6 +29,10 @@ public class TaskTwo {
                     break;
                 }
             }
+        }
+        System.out.print("\nIdentical numbers: ");
+        for (int iteration : result ){
+            System.out.print(iteration + " ");
         }
     }
 }

@@ -25,11 +25,10 @@ public class TaskTwo {
         System.out.print("\nIdentical numbers: ");
         for (int temp : firstArray) {
             for (int k : secondArray) {
-                if (k == temp) {
+                if (k == temp && !result.contains(temp)) {
                     result.add(temp);
                     break;
                 }
-
             }
         }
     }
